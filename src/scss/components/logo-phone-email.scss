@@ -1,0 +1,94 @@
+
+/* ==========================================================================
+   Top Header: Logo - Phone Number - Email
+   ========================================================================== */
+.header { padding-top: $l-pad; }
+
+@include min-screen(37.5em) {
+	.ph-number-div,
+	.header-email-div {
+		width: 50%;
+		float: left;
+	}
+}
+
+@include min-screen(62.5em) {
+	.header {
+		margin: auto;
+		padding-top: 4em;
+	}
+
+	.logo-div {
+		width: 40%;
+		float: left;
+	}
+
+	.ph-number-div,
+	.header-email-div {
+		width: 30%;
+	}
+}
+
+
+/* Logo
+   ========================================================================== */
+.logo-div { padding-bottom: $s-pad; }
+.logo-svg { 
+	width: 256px;
+	height: 52px; //Firefox27.0.1
+}
+
+@include min-screen(71.875em) {
+	.logo-div { padding-bottom: 0; }
+}
+
+
+
+
+
+/* Phone Number
+   ========================================================================== */
+.ph-number-div--left { display: none; }
+.read-only-ph-number { display: none; }
+
+
+@include max-screen(37.5em) {
+	.ph-number-div--below-logo,
+	.mobile-ph-number    { display: block; }
+}
+
+@include min-screen(37.6em) {
+	.mobile-ph-number { font-weight: normal; }	
+}
+
+@include min-screen(62.5em) {
+	.ph-number-div--below-logo { display: none; }
+	.ph-number-div--left { display: table; }
+}
+
+
+@include min-screen(71.875em) {
+	.ph-number-div { text-align: right; }
+
+	.mobile-ph-number 		{ display: none; }
+	.read-only-ph-number  { display: block; }
+}
+
+
+
+/* Email
+   ========================================================================== */
+.header-email-div { display: none; }
+.header-email { font-weight: normal; }
+
+@include min-screen(37.5em) {
+	.header-email-div { display: table; }	
+}
+
+@include min-screen(71.875em) {
+	.header-email { text-align: left; }	
+}
+
+
+
+

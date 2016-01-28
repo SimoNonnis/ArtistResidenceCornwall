@@ -1,0 +1,18 @@
+
+/* ==========================================================================
+   General Rooms Page
+   ========================================================================== */
+.browse-all-rooms { margin-bottom: $m-pad; }
+
+
+@include min-screen(43.75em) {
+	.browse-all-rooms { width: 36em; }	
+}
+
+@include min-screen(62.5em) {
+	.browse-all-rooms { 
+		margin-bottom: $xl-pad; 
+		padding: 1.3em 0 1.2em;
+		width: 45em;
+	}
+}

@@ -1,0 +1,147 @@
+
+/* ==========================================================================
+   Cornwall
+   ========================================================================== */
+
+
+
+/* Style
+   ========================================================================== */
+
+
+/* Cornwall Fonts
+========================================================================== */
+@font-face {
+font-family: 'a_love_of_thunderregular';
+src: url('fonts/a_love_of_thunder-webfont.eot');
+src: url('fonts/a_love_of_thunder-webfont.eot?#iefix') format('embedded-opentype'),
+     url('fonts/a_love_of_thunder-webfont.woff') format('woff'),
+     url('fonts/a_love_of_thunder-webfont.ttf') format('truetype'),
+     url('fonts/a_love_of_thunder-webfont.svg#a_love_of_thunderregular') format('svg');
+font-weight: normal;
+font-style: normal;
+
+}
+
+@font-face {
+font-family: 'axehandelregular';
+src: url('fonts/axehandel-webfont.eot');
+src: url('fonts/axehandel-webfont.eot?#iefix') format('embedded-opentype'),
+     url('fonts/axehandel-webfont.woff') format('woff'),
+     url('fonts/axehandel-webfont.ttf') format('truetype'),
+     url('fonts/axehandel-webfont.svg#axehandelregular') format('svg');
+font-weight: normal;
+font-style: normal;
+
+}
+
+.page-title,
+.main-promo-article__title,
+.view-gallery__title { 
+  font-family:'axehandelregular', Arial, sans-serif; 
+  font-weight:200; 
+  font-style:normal;
+  letter-spacing: 0;
+} 
+
+.page-title--main-banner { 
+  @include font-size(3.5);
+  font-family: 'a_love_of_thunderregular', Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+@include min-screen(19.0625em) {
+  .page-title--main-banner {
+    @include font-size(4.5); 
+  }
+}
+
+@include min-screen(23.75em) {
+  .page-title--main-banner {
+    @include font-size(5.4); 
+  }
+}
+
+
+.external-container { border-top-color: $cobalt; }
+body { background-image: url('../images/ar-cornwall-background.gif'); }
+
+.ul-top-nav a {
+	&:hover,
+	&:focus { color: $cobalt; }
+}
+
+.ul-top-nav li:last-child { 
+  //background-color: $cobalt;
+  background-image: url('../images/cornwall-pattern.gif'); 
+}
+
+.m-book-online { background-color: $cobalt; }
+.m-book-online-link {
+  color: $cobalt;
+  background-color: #FDFAEC;
+}
+
+.ul-top-nav li:last-child a { 
+  color: $cobalt;
+  background-color: #FDFAEC;
+}
+
+a:hover,
+a:focus,
+a:active,
+.current_page_item a { color: $cobalt; }
+
+h1, .h1 { color: $cobalt; }
+
+
+.square-text__type { color: $cobalt; }
+
+
+.btn-skin-link-color,
+.g-map__btn { 
+  color: $cobalt;
+  border-color: $cobalt;
+
+}
+
+.btn-skin-link-color:active,
+.btn-skin-link-color:focus,
+.btn-skin-link-color:hover,
+.g-map__btn:active,
+.g-map__btn:focus,
+.g-map__btn:hover { 
+  color: $bgcolor;
+  background-color: $cobalt; 
+}
+
+.view-gallery {
+  color: $cobalt;
+  border-color: $cobalt;
+}
+
+.media-obj-body__title {
+  color: $html-text-color;
+}
+
+.main-navigation .current-menu-item.menu-item:last-child a {
+  color: $bgcolor;
+  background-color: $cobalt; 
+}
+
+@include min-screen(64em) {
+  .cell--promo-bkg {
+    background: url('../images/butterflies.png') no-repeat 88% 80%;  
+  }
+}
+
+
+.main-promo-article { border-color: $cobalt; }
+.main-promo-article__title { color: $cobalt; }
+
+@include min-screen(81.25em) {
+  .ul-top-nav a {
+    @include font-size(1.4); 
+  }
+}
+

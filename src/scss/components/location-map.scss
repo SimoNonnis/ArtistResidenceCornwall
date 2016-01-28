@@ -1,0 +1,54 @@
+
+/* ==========================================================================
+   Location Page
+   ========================================================================== */
+
+
+/* Map
+   ========================================================================== */
+
+.g-map { padding-top: $xxl-pad; }
+.g-map iframe { display: none; }
+
+
+@include min-screen(43.75em) {
+.g-map { 
+	height: 430px;
+	padding: $xxl-pad $m-pad 0;
+}
+.g-map__btn { display: none; }
+.g-map iframe { display: block; }
+}
+
+@include min-screen(81.25em) {
+	.g-map { padding: $xxl-pad 0 0; }	
+}
+
+
+
+/* Content
+   ========================================================================== */
+.content-container {
+	padding-bottom: $xl-pad;
+}
+
+@include min-screen(43.75em) {
+	.content-container {
+		padding-bottom: 0;
+		float: left;
+		width: 50%;
+		padding-right: 8%;
+	}
+	.booking-widget-container,
+	.promo-container {
+		float: left;
+		width: 50%;	
+	}	
+}
+
+
+
+/* Directions - Bottom Content
+   ========================================================================== */
+.directions-container { padding-top: $xl-pad; }
+

@@ -1,0 +1,75 @@
+
+/* ==========================================================================
+   The Brain File
+   ========================================================================== */
+
+
+
+
+/* Core
+   ========================================================================== */
+@import 'core/variables';
+@import 'core/mixins';
+
+
+/* Base
+   ========================================================================== */
+@import 'base/normalize';
+@import 'base/global';
+@import 'base/typo';
+
+
+/* Utils
+   ========================================================================== */
+@import 'utils/helpers';
+
+
+
+
+/* Components
+   ========================================================================== */
+@import 'components/containers';
+@import 'components/logo-phone-email';
+@import 'components/main-nav';
+@import 'components/footer';
+@import 'components/side-widget';
+@import 'components/breadcrumb-ish';
+@import 'components/only-text';
+@import 'components/sitemap';
+@import 'components/half-half-container';
+@import 'components/location-map';
+@import 'components/square';
+@import 'components/g-rooms';
+@import 'components/single-room';
+
+@import 'plugins/flexslider'; //Plugin
+
+@import 'components/slider';
+@import 'components/view-gallery';
+@import 'components/booking-widget-container';
+@import 'components/neighbourhood';
+@import 'components/blog';
+@import 'components/front-page';
+
+
+
+
+
+
+
+/* Locations - Cornwall
+   ========================================================================== */
+@import 'locations/cornwall';
+
+
+
+
+
+
+
+
+
+/* Plugins
+   ========================================================================== */
+@import 'plugins/magnific-popup';
+@import 'plugins/pickadate';

@@ -1,0 +1,71 @@
+
+
+/* ==========================================================================
+   Front Page
+   ========================================================================== */
+
+.cell-container > .cell {
+	margin: $m-pad 0; 
+}
+
+@include min-screen(43.75em) {
+	.cell-container > .cell {
+		padding: $s-pad;
+		width: 50%;
+		float: left;
+		height: 450px;
+	}
+
+	.cell__main-banner {
+		padding: 0 $m-pad;
+	}
+}
+
+@include min-screen(64em) {
+	.cell-container > .cell {
+		width: 33.333%;
+	}
+}
+
+
+
+/* Main Promo
+   ========================================================================== */
+.main-promo-article {
+	border: 5px solid;
+	padding: $m-pad $s-pad;
+}
+
+@include screen(43.75em, 63.9375em) {
+	.main-promo-article { 
+		border: none;
+	}
+}
+
+@include min-screen(64em) {
+	.main-promo-article {
+		width: 73%;
+		border: 5px solid;
+	}
+}
+
+
+
+/* Square Promos
+   ========================================================================== */
+.square-no-borders {
+	background-color: transparent;
+}
+
+.cell--no-mobile-visible {
+	display: none;
+}
+
+
+@include min-screen(64em) {
+	.cell--no-mobile-visible {
+		display: block;
+	}	
+}
+
+

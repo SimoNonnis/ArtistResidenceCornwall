@@ -1,0 +1,74 @@
+
+/* ==========================================================================
+   General Blog Page with All Posts + Single Post
+   ========================================================================== */
+
+
+
+/* General Blog Page
+   ========================================================================== */
+.blog-nav {
+	padding: $l-pad 0;
+}
+
+@include min-screen(29.6875em) {
+	.blog-nav__link,
+	.blog-nav__current {
+		float: left;
+		width: 33.333%;
+	}
+}
+
+@include min-screen(56.25em) {
+	.blog-nav__link { width: 25%; }
+	.blog-nav__current { width: 50%; }
+}
+
+.blog-nav__link span {
+	width: 90%;
+	border-color: $m-gray;
+}
+
+.blog-nav__link span:empty {
+	border: none;
+	padding: 0;
+}
+
+.blog-nav__link a {
+	display: block;
+	color: $m-gray;
+}
+
+
+
+
+/* Sub-section comment block
+   ========================================================================== */
+.single-post-slider-container {
+	margin-top: $xl-pad;
+	overflow: hidden;
+}
+
+@include max-screen(25em) {
+	.single-post-slider-container img {
+		max-width: none;
+		width: auto!important;
+		height: 10em;
+	}
+}
+
+
+
+
+/* Single Post
+   ========================================================================== */
+.single-post-container {
+	padding: $xl-pad 0;
+}
+
+
+
+
+
+   
+

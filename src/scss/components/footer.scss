@@ -1,0 +1,175 @@
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer { 
+	padding-top: $xxl-pad;
+	background-color: $deep-blue;
+	color: $footer-text-color; 
+}
+
+.footer__sitename { margin-bottom: $m-pad; }
+
+.footer a { 
+	font-weight: normal; 
+		
+		&:hover,
+		&:focus,
+		&:active { color: $white; } 
+}
+
+.footer__address { padding: 0 $s-pad; }
+.footer__ignite-link { padding: 0 $s-pad $l-pad $s-pad; }
+
+@include max-screen(23.125em) {
+	.footer__address__span { display: block; }	
+}
+
+.footer__social { padding: $m-pad 0 $xxl-pad; }
+
+.footer__social,
+.footer__social a,
+.footer__nav a,
+.footer__ignite-link a { color: $footer-grey; }
+
+.footer__nav { 
+	border-top: 1px solid $footer-grey-border;
+	padding: $l-pad 0; 
+
+}
+
+.ul-footer-nav > li { 
+	display: inline-block; 
+	padding: 0 $xs-pad;
+}
+
+@include max-screen(34.375em) {
+	.ul-footer-nav > li { padding: $s-pad $xs-pad; }
+}
+
+
+
+.ul-footer-nav a,
+.footer__ignite-link { @include font-size(1.4); }
+.ul-footer-nav .current_page_item a { color: $white; }
+
+
+
+
+/* Our Places Popup
+   ========================================================================== */
+.ourPlaces-popup-btn {
+	margin-top: $m-pad;
+	border-color: $footer-grey;
+}
+
+@include min-screen(78.125em) {
+	.ourPlaces-popup-btn { display: none; }
+}
+
+
+.ourPlaces-popup {
+	position: relative;
+  background-color: $deep-blue;
+	color: $footer-text-color; 
+  padding: $m-pad;
+  width: auto;
+  max-width: 500px;
+  margin: $l-pad auto;
+}
+
+.ourPlaces-popup__location {
+	padding: $l-pad;
+	margin: $xs-pad; 
+	border: 1px solid $footer-grey-border;
+	transition: none;
+}
+
+.ourPlaces-popup__location:hover,
+.ourPlaces-popup__location:focus,
+.ourPlaces-popup__location:active {
+	color: $white;
+}
+
+.mfp-close {
+	color: $footer-grey!important; 
+}
+
+
+
+/* Newsletter PopUp
+   ========================================================================== */
+.newsLetter-popup {
+	position: relative;
+  background-color: $deep-blue;
+	color: $footer-text-color; 
+  padding: $l-pad;
+  width: auto;
+  max-width: 500px;
+  margin: $l-pad auto;
+}
+
+.newsL__blok {
+	margin-bottom: $m-pad;
+}
+
+.newsL__blok--btn {
+	margin-bottom: 0;
+}
+
+
+.newsL__blok input {
+	@include font-size(1.6);
+	cursor: pointer;
+	border-radius: 0;
+  border: none;
+  color: $html-text-color;
+  outline: none;
+  width:100%;
+  line-height: 1.6;
+  padding: .5em 1.5em .4em;
+  background-color: $footer-text-color;
+
+}
+
+
+.newsL__blok .btn--subscribe {
+	border: 1px solid transparent;
+	color: $deep-blue;
+	width: 50%;
+	margin-top: .4em;
+	transition: .25s ease-out;
+}
+
+@include min-screen(78.125em) {
+	.newsL__blok .btn--subscribe:hover {
+		color: $white;
+		border: 1px solid $footer-grey;
+		background-color: transparent; 	
+	}
+}
+
+
+
+
+
+
+
+
+
+/* Hide Google Conversion Frame
+   ========================================================================== */
+iframe[name='google_conversion_frame'] {
+	height: 0 !important;
+	min-height: 0 !important;
+	width: 0 !important;
+	line-height: 0 !important;
+	font-size: 0 !important;
+	margin-top: -13px;
+	float: left;
+}
+
+
+
+

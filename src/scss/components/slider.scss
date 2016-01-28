@@ -1,0 +1,50 @@
+
+/* ==========================================================================
+   Slider
+   ========================================================================== */
+
+
+
+/* Slider in Single Rooms
+   ========================================================================== */
+.single-room-slider-container .flexslider {
+	border: none;
+	box-shadow: none;
+	margin: 0;
+}
+	
+
+.flex-control-nav { display: none; }
+
+@include max-screen(25em) {
+	.flexslider .slides img {
+		max-width: none;
+		width: auto!important;
+		height: 10em;
+	}
+
+	.flex-direction-nav .flex-prev,
+	.flex-direction-nav .flex-next { display: none; }
+}
+
+@include min-screen(43.75em) {
+	.flex-control-nav {
+		display: block;
+		bottom: .25em;
+	}
+
+	.flex-control-nav li {
+		margin: 0 3px;
+	}
+
+	.flex-control-paging li a {
+		background-color: $white;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: none;
+	}
+
+	.flex-control-paging li a.flex-active {
+		background-color: $white;	
+	}
+
+}

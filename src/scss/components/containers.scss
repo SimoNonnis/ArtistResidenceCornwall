@@ -1,0 +1,117 @@
+
+/* ==========================================================================
+   Containers
+   ========================================================================== */
+
+
+
+
+/* External Container
+   ========================================================================== */
+.external-container {
+	border-top: 0.750em solid;
+	overflow-x: hidden;
+  position: relative;
+}
+
+
+/* Big One
+   ========================================================================== */
+.container {
+	max-width: $max-width;
+	margin: auto; 
+	padding: 0 $l-pad $xxl-pad; 
+}
+
+
+@include min-screen(43.75em) {
+	.home .container {
+		padding-bottom: 0;
+	}
+
+	.page-template-gallery-children-php .container,
+	.page-template-gallery-php .container {
+		padding: 0 0 $xxl-pad;	
+	}  
+}
+
+
+@include min-screen(59.375em) {
+	.page-template-gallery-children-php .container,
+	.page-template-gallery-php .container {
+		padding: 0 $l-pad $xxl-pad;	
+	}  	
+}
+
+
+@include min-screen(81.25em) {
+	.container,
+	.page-template-gallery-children-php .container,
+	.page-template-gallery-php .container {
+		padding: 0 0 8em;	
+	}
+}
+
+
+
+/* Medium One
+   ========================================================================== */
+.medium-container { 
+	max-width: $medium-max-width;
+	margin: auto;
+	padding: $xxl-pad $s-pad 0; 
+}
+
+@include min-screen(50em) {
+	.medium-container {
+		padding: $xl-pad 0 0;	
+	}
+}
+
+
+/* Small One
+   ========================================================================== */
+.small-container {
+	max-width: $small-max-width;
+	margin: auto; 
+	padding: $xxl-pad $s-pad 0;
+}
+
+@include min-screen(50em) {
+	.small-container {
+		padding: $xl-pad 0 0;	
+	}
+}
+
+
+
+/* Square Group Container
+   ========================================================================== */
+.square-group-container { padding: $xxl-pad $s-pad 0; }
+
+@include min-screen(43.75em) {
+	.page-template-gallery-children-php .square-group-container,
+	.page-template-gallery-php .square-group-container {
+		padding-left: 0;
+		padding-right: 0;	
+	}  
+}
+
+@include min-screen(50em) {
+	.square-group-container {
+		padding: $xl-pad 0 0;	
+	}
+}
+
+
+/* Front Page - Cell Container
+   ========================================================================== */
+.cell-container { padding: $xxl-pad $s-pad 0; }
+
+@include min-screen(50em) {
+	.cell-container {
+		padding: $xl-pad 0 0;	
+	}
+}
+
+

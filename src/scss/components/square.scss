@@ -1,0 +1,113 @@
+
+/* ==========================================================================
+   Square Component
+   ========================================================================== */
+
+
+
+/* Basic
+   ========================================================================== */
+
+.square {
+  position: relative;
+  display: inline-block;
+  padding: $s-pad;
+  background-color: $white;
+}
+
+a.square {  
+	text-decoration: none;
+	color: inherit;
+}
+
+@include min-screen(75em) {
+  a.square:hover { box-shadow: 0 0 20px #CCC; }  
+}
+
+
+
+/* Grouping --> Rooms -- Gallery -- NeighBourHood
+   ========================================================================== */
+.square-group { text-align: center; }
+.square-group > .square {
+  margin: 1%; 
+}
+
+
+
+/* Rooms -- NeighBourHood
+   ========================================================================== */
+.square-text { 
+  max-width: 250px;
+  padding: .7em 0 $s-pad;
+}
+
+
+.square-text__title { 
+  width: 65%;
+  float: left;
+  color: $grey;
+}
+
+.square-text__type {
+  //padding: $s-pad $l-pad;
+
+  padding: 1.5em 2em .9em;
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.square-text__info { 
+  color: $m-gray; 
+  width: 35%;
+  float: right;
+  margin: 0;
+  line-height: 2;
+}
+
+
+
+
+
+
+
+
+
+
+/* Inside Media Object
+   ========================================================================== */
+.media-obj { margin-top: $xxl-pad; }
+
+.media-obj__img {
+  float: left;
+  max-width: 250px;
+	margin-right: $m-pad;
+}
+
+.media-obj__body {
+  overflow: hidden;
+  padding-bottom: $m-pad;
+}
+
+.media-obj-body__title {
+  padding-top: .2em;
+}
+
+.media-obj-body__date {
+  margin-top: $xs-pad;
+  color: $m-gray;
+}
+
+
+@include max-screen(25em) {
+  .media-obj__img { padding: $xs-pad; } 
+}
+
+@include max-screen(56.25em) {
+	.media-obj__img { width: 30%; } 
+}
+
+
+

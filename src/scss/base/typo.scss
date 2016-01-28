@@ -1,0 +1,147 @@
+
+
+/* ==========================================================================
+   Typo
+   ========================================================================== */
+
+
+
+
+
+
+/* Sets up that Base 10 stuff  1rem = 10px
+   ========================================================================== */
+html {
+  font-size: 62.5%;
+  line-height: 1.6; //24px
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+
+
+/* Font-Family and others
+   ========================================================================== */
+body 		{ 
+  font-family: "jaf-lapture",serif; 
+  font-style: italic;
+}
+
+
+
+
+.ul-top-nav a { font-weight: bold; }
+
+.page-title,
+.main-promo-article__title,
+.view-gallery__title { 
+  font-family:'Arial Narrow', Arial, sans-serif; 
+} 
+
+.content-container__title,
+.media-obj-body__title {
+  font-style: normal;
+}
+
+
+
+
+
+
+/* Links
+   ========================================================================== */
+a { 
+  text-decoration: none; 
+  font-weight:bold; 
+  font-style: normal;
+  color: inherit;
+  transition: .25s ease-out;
+}
+
+a:hover,
+a:focus,
+a:active { 
+  text-decoration: none; 
+  cursor:pointer;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+a:focus { outline: 1px dotted $l-gray; }
+
+
+
+
+
+/* Font-Size
+   ========================================================================== */
+body      { @include font-size(1.5); }
+
+h1,
+.h1       { @include font-size(3.8); }
+
+h2,
+.h2       { @include font-size(2.4); }       
+
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5       { @include font-size(1.8); }
+
+
+
+.square-text__type { 
+  @include font-size(1); 
+  letter-spacing: 3px;
+}
+
+.square-text__title { @include font-size(1.5); }
+
+.square-text__info { 
+  @include font-size(1.3); 
+  font-style: italic;
+  font-weight: normal;
+}
+
+
+
+.media-obj-body__title { 
+  line-height: 1.3; 
+  @include font-size(1.5);
+}
+
+.content-container__title {
+  @include font-size(2.4);  
+}
+
+
+.footer__sitename { 
+  @include font-size(1.2); 
+  letter-spacing: 3px;
+}
+
+.page-title--main-banner { 
+  @include font-size(6.2); 
+  letter-spacing: 5px;
+}
+.main-promo-article__title { @include font-size(2.6); } 
+.view-gallery__title { @include font-size(2.2); }
+
+.browse-all-rooms { @include font-size(1.3); }  
+
+
+
+
+
+
+
+
+/* Page Title
+   ========================================================================== */
+.page-title--onlyText { padding-bottom: $xs-pad; }
+

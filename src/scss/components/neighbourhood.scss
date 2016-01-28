@@ -1,0 +1,91 @@
+
+/* ==========================================================================
+   Neighbourhood
+   ========================================================================== */
+
+
+
+/* Neighbourhood - Filter
+   ========================================================================== */
+.dynamic-filter-container {
+	background-image: url(../images/dots.gif);
+	max-width: $small-max-width;
+	margin-bottom: $xl-pad;
+	padding: .7em;
+
+}
+
+.dynamic-filter {
+	background-color: $white;
+	padding: $s-pad;
+	
+	border: 1px solid $l-gray; 
+}
+
+.block-filter { border-color: $l-gray; }
+.block-filter--area { border-bottom: none; }
+
+.block-filter__label {
+	color: $m-gray;
+	width:100%;
+  max-width:100%;
+  padding: $s-pad  $m-pad; 
+	border-bottom: 1px solid $l-gray; 
+}
+
+
+.block-filter__select-wrapper {
+  padding: $s-pad;
+  display:block;
+  overflow:hidden;
+  width:100%;
+}
+
+.block-filter select {
+	@include font-size(1.6);
+	cursor: pointer;
+	font-weight: bold;
+	background:none;
+  border: none;
+  color: $html-text-color;
+  outline: none;
+  width:100%;
+}
+
+
+
+
+
+
+
+
+
+@include min-screen(29.375em) {
+	.block-filter__label {
+		width: 30%;
+		float: left;
+		border-right: 1px solid $l-gray;
+		border-bottom: none;
+	}
+
+	.block-filter__select-wrapper {
+		width: 70%;
+		float: left;
+	}
+}
+
+
+@include min-screen(59.375em) {
+	.block-filter {
+		width: 49.5%;
+		float: left;
+	}
+
+	.block-filter--area {
+		width: 49.5%;
+		margin-right: 1%;
+		border-bottom: 1px solid $l-gray;
+	}
+}
+
+

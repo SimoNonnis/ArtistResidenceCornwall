@@ -1,0 +1,13 @@
+
+/* ==========================================================================
+   Only Text Pages
+   ========================================================================== */
+.only-text-page-content { padding-top: $xl-pad; }
+
+@include min-screen(50em) {
+	.only-text-page-content { padding: $xl-pad $xl-pad 0; }
+}
+
+@include min-screen(71.875em) {
+	.only-text-page-content { padding: $xl-pad $xxxl-pad 0; }
+}

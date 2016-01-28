@@ -1,0 +1,20 @@
+
+/* ==========================================================================
+   BreadCrumbs-ish
+   ========================================================================== */
+
+.children-pages-links { padding-bottom: $m-pad; }
+
+@include max-screen(38.4375em) {
+	.view-rooms { display: block; }
+}
+
+
+@include min-screen(29.375em) {
+	.children-pages-links-ul { display: inline-block; }
+	.children-pages-links-ul > li:before { content: " / "; }
+	.children-pages-links-ul > li { 
+		display: inline-block;
+		vertical-align: middle; 
+	}
+}

@@ -1,0 +1,68 @@
+
+/* ==========================================================================
+   Booking Widget
+   ========================================================================== */
+
+
+
+/* Booking Widget Containers
+   ========================================================================== */
+.booking-widget-container,
+.home-booking-widget-container {
+	background-image: url(../images/dots.gif);
+	padding: .7em;	
+}
+
+.bw-form-container {
+	padding: $m-pad;
+	background-color: $white;
+	border: 1px solid $l-gray;
+}
+
+
+
+/* Form Elements
+   ========================================================================== */
+.bw-block {
+	border: 1px solid $l-gray;
+	margin: $m-pad 0;
+}
+
+
+.bw-block__label {
+	color: $m-gray;
+	padding: $s-pad; 
+	width: 45%;
+	float: left;
+	border-right: 1px solid $l-gray;
+}
+
+.bw-block__field {
+	width: 55%;
+	float: left;
+	overflow: hidden;
+	padding: $s-pad;
+}
+
+
+.bw-block__field input,
+.bw-block__field select {
+	@include font-size(1.6);
+	cursor: pointer;
+	background:none;
+  border: none;
+  color: #aaa;
+  outline: none;
+  width:100%;
+}
+
+
+
+.btn--book-now {
+	background: transparent;
+	outline: none;
+	border-radius: 0;
+	line-height: 1.6;
+	transition: .25s ease-out;
+}
+

@@ -1,0 +1,176 @@
+
+/* ==========================================================================
+   Main Navigation
+   ========================================================================== */
+
+
+
+
+/* Header
+   ========================================================================== */
+@include min-screen(81.25em) {
+	.header { width: 90%; }
+}
+
+
+
+
+
+/* Navigation
+   ========================================================================== */
+.ul-top-nav { display: none; }
+.ul-top-nav > li { display: inline-block; }
+
+
+.main-navigation .tinynav { 
+	@include font-size(1.6);
+	cursor: pointer;
+	font-weight: bold;
+	background:none;
+  border: none;
+  color: $html-text-color;
+  outline: none;
+  width:100%;
+}
+
+.m-book-online { 
+	width: 85%;
+  padding: $s-pad;
+}
+
+.m-book-online-link { padding: $s-pad; }
+
+
+
+
+@include max-screen(59.375em) {
+	.main-navigation__select-wrapper {
+		border: 1px solid $l-gray;
+		padding: .9em;
+		display:block;
+		width: 85%;
+  	overflow:hidden;
+  	margin-bottom: $m-pad;
+	}	
+}
+
+@include max-screen(21.875em) {
+	.main-navigation__select-wrapper {
+		padding-left: 26%;
+	}	
+}
+
+
+@include screen(25em, 59.375em) {
+	.main-navigation__select-wrapper {
+		padding-left: 10%;
+	}	
+}
+
+@include screen(31.25em, 59.375em) {
+	.main-navigation__select-wrapper {
+		padding-left: 13%;
+	}	
+}
+
+@include screen(21.875em, 59.375em) {
+	.main-navigation__select-wrapper {
+		width: 48%;
+		float: left;
+		margin-bottom: 0;	
+	}	
+}
+
+@include min-screen(59.4375em) {
+	.main-navigation .tinynav { display: none; }
+}
+
+
+
+
+
+
+@include min-screen(21.875em) {
+	.m-book-online { 
+		width: 48%;
+		float: left;
+	}
+
+	.m-book-online { float: right; }
+}
+
+
+
+
+
+
+
+
+@include min-screen(59.375em) {
+	.main-navigation { margin-top: $l-pad; }
+	
+	.ul-top-nav { display: block; }
+
+	.ul-top-nav { 
+		border: 1px solid $l-gray; 
+		border-right-width: 2px;
+	}
+
+	.ul-top-nav > li {
+		border-left: 1px solid $l-gray; 
+		padding: $s-pad;
+		float: left;
+		display: table; 
+	}
+	.ul-top-nav a { 
+		display: table-cell;
+		color: $grey; 
+		padding: .7em 0 $s-pad 0;
+		@include font-size(1.3);
+	}
+	
+}
+
+@include screen(59.375em, 63.9374em) {
+	.ul-top-nav { border-bottom: none; }
+	
+	.ul-top-nav > li {
+		border-bottom: 1px solid $l-gray; 
+		width: 25%;
+	}
+}
+
+@include min-screen(63.9375em) {
+	.ul-top-nav { border: none; }
+	//.ul-top-nav > li:first-child { display: none; }
+	.ul-top-nav > li {
+		border-top: 1px solid $l-gray;
+		border-bottom: 1px solid $l-gray; 
+		width: 12.5%; 
+	}
+}
+
+
+
+
+
+@include min-screen(75em) {
+	.main-navigation { margin-top: $xl-pad; }	
+}
+
+
+@include max-screen(59.375em) {
+	.main-navigation { 
+		max-width: 600px;
+		margin: $s-pad auto 0; 
+	}
+}
+
+
+/* Book Online Button only for Mobile
+   ========================================================================== */
+//59.375
+@include min-screen(59.4375em) {
+	.m-book-online { display: none; }
+}
+
